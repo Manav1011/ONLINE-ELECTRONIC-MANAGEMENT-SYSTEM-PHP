@@ -1,0 +1,25 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --offcanvas-width: 250px;
+}
+.sidebar-nav{
+    width: var(--offcanvas-width);
+}
+@media(min-width:992px){
+.sidebar-nav{
+    transform: none;
+    visibility: visible !important;
+    top: 56px;
+}
+main{
+    margin-left: var(--offcanvas-width);
+}
+}
+.offcanvas-backdrop::before{
+    display: none;
+}
+#navbarDropdown{
+    left: 3cm;
+}
