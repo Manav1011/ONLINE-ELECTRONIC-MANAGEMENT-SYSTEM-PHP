@@ -9,4 +9,4 @@ with features like
   cart, order and review functionality
   
   
- SQL database, dataflow diagrams, ER diagrams are included
+ SQL database, dataflow diagrams, ER diagram, Word report, PPT are inside Document folder
