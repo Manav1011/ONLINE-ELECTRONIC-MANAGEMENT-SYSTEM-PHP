@@ -1,5 +1,5 @@
 <?php
- include('C:\xampp\htdocs\ONLINE ELECTRONIC MANAGEMENT SYSTEM\dbconnect.php');
+ include('../dbconnect.php');
 $login=false;
 if(isset($_POST['submit'])){
   $email=$_POST['email'];
@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     session_start();
     $_SESSION['loggedin']=true;
     $_SESSION['username']=$username;
-    header("location:http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/admin/admin.php");
+    header("location:admin/admin.php");
   }
   if($login){
     echo '<div class="alert alert-success" role="alert">
@@ -48,7 +48,7 @@ if(isset($_POST['submit'])){
       session_start();
       $_SESSION['loggedin']=true;
       $_SESSION['username']=$username;
-      header("location:http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/shopkeeper/shopkeeper.php");
+      header("location:shopkeeper/shopkeeper.php");
     }
     
     }

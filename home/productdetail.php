@@ -304,14 +304,14 @@ html, body {
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item me-2" id="home">
-              <a class="nav-link active" aria-current="page" href="index.php">
+              <a class="nav-link active" aria-current="page" href="/home">
               <div class="home">
                 <i class="fas fa-home"></i>
               </div>
               </a>
             </li>
             <li class="nav-item me-3" id="signin">
-              <a class="nav-link active" href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+              <a class="nav-link active" href="../login/login.php">
                 <i class="fas fa-sign-in-alt"></i>
                 <font color="black">Sign In</font>
               </a>
@@ -326,7 +326,7 @@ html, body {
           </div>
             <li>
               <div class="nav-item cart position-fixed" id="cart">
-                <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+                <a href="../login/login.php">
                 
                   <i class="fas fa-shopping-cart text-white fa-2x">  <font color="white">Cart</font></i>
 
@@ -352,7 +352,7 @@ html, body {
 
       <!-- Left Column / Headphones Image -->
       <div class="left-column">
-        <img data-image="red" class="active" src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $image;?>" alt="">
+        <img data-image="red" class="active" src="images/productimages/<?php echo $image;?>" alt="">
       </div>
 
 
@@ -370,8 +370,8 @@ html, body {
           <span><?php echo $price;?> Rs</span>
           </div>
           <br>
-          <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="cart-btn">Add to cart</a>
-          <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="cart-btn">Buy Now</a>
+          <a href="../login/login.php" class="cart-btn">Add to cart</a>
+          <a href="../login/login.php" class="cart-btn">Buy Now</a>
         
       </div>
     </main>

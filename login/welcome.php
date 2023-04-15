@@ -5,7 +5,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
   exit;
 }
   $id=$_GET['id'];
-include('C:\xampp\htdocs\ONLINE ELECTRONIC MANAGEMENT SYSTEM\dbconnect.php');
+include('../dbconnect.php');
 ?>
 <?php
 if(isset($_POST['submit'])){
@@ -119,7 +119,7 @@ background-repeat:inherit;
               </a>
             </li>
             <li class="nav-item me-3" id="signin">
-              <a class="nav-link active" href="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/logout.php"  onclick="return confirm('Do you want to logout?');">
+              <a class="nav-link active" href="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM//home/LOGOut.php"  onclick="return confirm('Do you want to /home/LOGOut?');">
                 <i class="fas fa-sign-in-alt"></i>
                 <font color="black">Log out</font>
               </a>
@@ -179,7 +179,7 @@ background-repeat:inherit;
 </li>
 </ul>
 <div class="speech1">
-    <img onclick="startcommand()" src="microphone.jpg"  class="border border-white rounded-circle" width="50px" height="40px"/>
+    <img onclick="startcommand()" src="/home/images/microphone.jpg"  class="border border-white rounded-circle" width="50px" height="40px"/>
   </div>
   <script>
   function startcommand() {
@@ -204,7 +204,7 @@ background-repeat:inherit;
           window.history.back();
         }
         if(result=="log out"){
-          window.location.replace("http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/logout.php");
+          window.location.replace("http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM//home/LOGOut.php");
         }
         if(result=="show my orders"){
           window.location.replace("myorders.php?cid=<?php echo $id;?>");
@@ -270,7 +270,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
           $id2=$row2['PRODUCT_ID'];
         }?>
         <a href="productdetail.php?id2=<?php echo $id2?>&id=<?php echo $id;?>">
-        <img src="images/iphone.jpg" alt="" height="500px" class="d-block w-100" alt="...">  
+        <img src="/home/images/iphone.jpg" alt="" height="500px" class="d-block w-100" alt="...">  
         </a>
         <a href="cartbybuynow.php?cid=<?php echo $id;?>&pid=<?php echo $id2;?>">
         <div class="top-left btn btn-light" style="font-family: 'Patrick Hand', cursive;">
@@ -286,7 +286,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
           $id2=$row2['PRODUCT_ID'];
         }?>
         <a href="productdetail.php?id2=<?php echo $id2?>&id=<?php echo $id;?>">
-        <img src="images/image.jpg" height="500px" class="d-block w-100" alt="...">
+        <img src="/home/images/image.jpg" height="500px" class="d-block w-100" alt="...">
       </a>
         <a href="cartbybuynow.php?cid=<?php echo $id;?>&pid=<?php echo $id2;?>">
           <div class="top-right btn btn-primary" style="font-family: 'Patrick Hand', cursive;">
@@ -301,7 +301,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
           $id2=$row2['PRODUCT_ID'];
         }?>
         <a href="productdetail.php?id2=<?php echo $id2?>&id=<?php echo $id;?>">
-        <img src="images/vivo.png" height="500px" class="d-block w-100" alt="...">
+        <img src="/home/images/vivo.png" height="500px" class="d-block w-100" alt="...">
       </a>
       <a href="cartbybuynow.php?cid=<?php echo $id;?>&pid=<?php echo $id2;?>">
         <div class="bottom-left btn btn-primary" style="font-family: 'Patrick Hand', cursive;">
@@ -323,25 +323,25 @@ CONTACT: <?php echo $row['CONTACT'];?>
       <div class="brands">
       <div class="owl-carousel owl-theme" id="carouesel2">
        <a href="brand.php?name=apple&id2=<?php echo $id;?>">
-        <div class="item" id="1"><img src="logo/apple.jpg" alt=""></div>
+        <div class="item" id="1"><img src="/home/LOGO/apple.jpg" alt=""></div>
         </a>
         <a href="brand.php?name=redmi&id2=<?php echo $id;?>">
-        <div class="item" id="3"><img src="logo/mi.jpg" alt=""></div>
+        <div class="item" id="3"><img src="/home/LOGO/mi.jpg" alt=""></div>
         </a>
         <a href="brand.php?name=realme&id2=<?php echo $id;?>">
-        <div class="item" id="4"><img src="logo/realme.png" height="90px" alt=""></div>
+        <div class="item" id="4"><img src="/home/LOGO/realme.png" height="90px" alt=""></div>
         </a>
         <a href="brand.php?name=oneplus&id2=<?php echo $id;?>">
-        <div class="item" id="5"><img src="logo/oneplus.jpg" alt=""></div>
+        <div class="item" id="5"><img src="/home/LOGO/oneplus.jpg" alt=""></div>
         </a>
         <a href="brand.php?name=oppo&id2=<?php echo $id;?>">
-        <div class="item" id="6"><img src="logo/oppo.jpg" alt=""></div>
+        <div class="item" id="6"><img src="/home/LOGO/oppo.jpg" alt=""></div>
         </a>
         <a href="brand.php?name=samsung&id2=<?php echo $id;?>">
-        <div class="item" id="7"><img src="logo/samsung.jpg" alt=""></div>
+        <div class="item" id="7"><img src="/home/LOGO/samsung.jpg" alt=""></div>
         </a>
         <a href="brand.php?name=vivo&id2=<?php echo $id;?>">
-        <div class="item" id="8"><img src="logo/vivo.jpg" alt=""></div>
+        <div class="item" id="8"><img src="/home/LOGO/vivo.jpg" alt=""></div>
         </a>
       </div>   
   </div>
@@ -358,7 +358,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
         <div class="container">
         <div class="card" style="width: 15rem; height:40rem;">
         <a href="productdetail.php?id=<?php echo $id?>&id2=<?php echo $pid;?>" style="text-decoration:none; color:black;">
-          <img src="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/shopkeeper/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="/home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -396,7 +396,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
         <div class="container">
         <div class="card" style="width: 15rem; height:40rem;">
         <a href="productdetail.php?id=<?php echo $id?>&id2=<?php echo $pid;?>" style="text-decoration:none; color:black;">
-          <img src="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/shopkeeper/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="/home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -434,7 +434,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
         <div class="container">
         <div class="card" style="width: 15rem; height:40rem;">
         <a href="productdetail.php?id=<?php echo $id?>&id2=<?php echo $pid;?>" style="text-decoration:none; color:black;">
-          <img src="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/shopkeeper/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="/home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -472,7 +472,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
         <div class="container">
         <div class="card" style="width: 15rem; height:40rem;">
         <a href="productdetail.php?id=<?php echo $id?>&id2=<?php echo $pid;?>" style="text-decoration:none; color:black;">
-          <img src="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/shopkeeper/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="/home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -510,7 +510,7 @@ CONTACT: <?php echo $row['CONTACT'];?>
         <div class="container">
         <div class="card" style="width: 15rem; height:40rem;">
         <a href="productdetail.php?id=<?php echo $id?>&id2=<?php echo $pid;?>" style="text-decoration:none; color:black;">
-          <img src="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/shopkeeper/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="/home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>

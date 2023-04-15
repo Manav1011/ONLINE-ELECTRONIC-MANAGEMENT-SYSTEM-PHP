@@ -69,14 +69,14 @@ header("location:searchedproduct.php?search=$search&id=$id");
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item me-2" id="home">
-              <a class="nav-link active" aria-current="page" href="index.php">
+              <a class="nav-link active" aria-current="page" href="/home">
               <div class="home">
                 <i class="fas fa-home"></i>
               </div>
               </a>
             </li>
             <li class="nav-item me-3" id="signin">
-              <a class="nav-link active" href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+              <a class="nav-link active" href="../login/login.php">
                 <i class="fas fa-sign-in-alt"></i>
                 <font color="black">Sign In</font>
               </a>
@@ -91,7 +91,7 @@ header("location:searchedproduct.php?search=$search&id=$id");
           </div>
             <li>
               <div class="nav-item cart position-fixed" id="cart">
-                <a href ="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+                <a href ="../login/login.php">
                 
                   <i class="fas fa-shopping-cart text-white fa-2x">  <font color="white">Cart</font></i>
 
@@ -109,11 +109,11 @@ header("location:searchedproduct.php?search=$search&id=$id");
   <thead>
     <tr>
     <th scope="col"><h1 style="font-family: 'Montserrat', sans-serif;">Smartphones</h1></th>
-    <th scope="col"><h3 style="position:absolute;  right:20%; top:8%;">Sort By:</h3></th>
+    <th scope="col"><h3 style="">Sort By:</h3></th>
     <form class="d-flex ms-auto" method="post">
     <div class="input-group ">
-    <th scope="col"><h3 style="position:absolute ;right:11%;top:8%;"> <button type="submit" name="priceasc" class="btn btn-outline-danger">Price Ascending</button></h3></th>
-    <th scope="col"><h3 style="position:absolute ;right:1%;top:8%;"> <button type="submit" name="pricedsc" class="btn btn-outline-danger">Price Descending</button></h3></th>
+    <th scope="col"><h3 style=""> <button type="submit" name="priceasc" class="btn btn-outline-danger">Price Ascending</button></h3></th>
+    <th scope="col"><h3 style=""> <button type="submit" name="pricedsc" class="btn btn-outline-danger">Price Descending</button></h3></th>
    
     </div>
   </form>
@@ -138,7 +138,7 @@ header("location:searchedproduct.php?search=$search&id=$id");
         <div class="col-3">
         <div class="container">
         <div class="card" style="width: 15rem;">
-          <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="images/productimages//<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row['BRAND_NAME']." ".$row['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row['PRICE'];?></h6>
@@ -146,8 +146,8 @@ header("location:searchedproduct.php?search=$search&id=$id");
             <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
             Features: <?php echo $row['FEATURES'];?>
     </p>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+            <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+            <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
           </div>
         </div>
       </div>
@@ -173,7 +173,7 @@ else{
   <div class="col-3">
   <div class="container">
   <div class="card" style="width: 15rem;">
-    <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
+    <img src="images/productimages//<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
     <div class="card-body">
       <h5 class="card-title"><?php echo $row['BRAND_NAME']." ".$row['MODEL_NAME'];?>
         <br><h6>Price: <?php echo $row['PRICE'];?></h6>
@@ -181,8 +181,8 @@ else{
       <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
       Features: <?php echo $row['FEATURES'];?>
 </p>
-      <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-      <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+      <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+      <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
     </div>
   </div>
 </div>
@@ -206,7 +206,7 @@ else{
         <div class="col-3">
         <div class="container">
         <div class="card" style="width: 15rem;">
-          <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="images/productimages//<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row['BRAND_NAME']." ".$row['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row['PRICE'];?></h6>
@@ -214,8 +214,8 @@ else{
             <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
             Features: <?php echo $row['FEATURES'];?>
     </p>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+            <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+            <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
           </div>
         </div>
       </div>

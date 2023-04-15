@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/017bc14cc6.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style>
    body{
-background-image: url("white.jpg");
+background-image: url("home/white.png");
 background-repeat:inherit;
 
 
@@ -57,7 +57,7 @@ background-repeat:inherit;
               </a>
             </li>
             <li class="nav-item me-3" id="signin">
-              <a class="nav-link active" href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+              <a class="nav-link active" href="../login/login.php">
                 <i class="fas fa-sign-in-alt"></i>
                 <font color="black">Sign In</font>
               </a>
@@ -72,7 +72,7 @@ background-repeat:inherit;
           </div>
             <li>
               <div class="nav-item cart position-fixed" id="cart">
-                <a href ="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+                <a href ="../login/login.php">
                 
                   <i class="fas fa-shopping-cart text-white fa-2x">  <font color="white">Cart</font></i>
 
@@ -80,7 +80,7 @@ background-repeat:inherit;
 </div>
 </li>
 <div class="speech1">
-    <img onclick="startcommand()" src="http://localhost/ONLINE%20ELECTRONIC%20MANAGEMENT%20SYSTEM/login/microphone.jpg"  class="border border-white rounded-circle" width="50px" height="40px"/>
+    <img onclick="startcommand()" src="/home/images/microphone.jpg"  class="border border-white rounded-circle" width="50px" height="40px"/>
   </div>
   <script>
   function startcommand() {
@@ -121,10 +121,10 @@ background-repeat:inherit;
         while($row2=mysqli_fetch_array($query2)){
           $id2=$row2['PRODUCT_ID'];
         }?>
-        <a href="productdetail.php?id2=<?php echo $id2?>">
-        <img src="images/iphone.jpg" alt="" height="500px" class="d-block w-100" alt="...">  
+        <a href="home/productdetail.php?id2=<?php echo $id2?>">
+        <img src="home/images/iphone.jpg" alt="" height="500px" class="d-block w-100" alt="...">  
         </a>
-        <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+        <a href="../login/login.php">
         <div class="top-left btn btn-light" style="font-family: 'Patrick Hand', cursive;">
           Buy Now
         </div>
@@ -137,10 +137,10 @@ background-repeat:inherit;
         while($row2=mysqli_fetch_array($query2)){
           $id2=$row2['PRODUCT_ID'];
         }?>
-        <a href="productdetail.php?id2=<?php echo $id2?>">
-        <img src="images/image.jpg" height="500px" class="d-block w-100" alt="...">
+        <a href="home/productdetail.php?id2=<?php echo $id2?>">
+        <img src="home/images/image.jpg" height="500px" class="d-block w-100" alt="...">
       </a>
-        <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+        <a href="../login/login.php">
           <div class="top-right btn btn-primary" style="font-family: 'Patrick Hand', cursive;">
             Buy Now
           </div>
@@ -152,10 +152,10 @@ background-repeat:inherit;
         while($row2=mysqli_fetch_array($query2)){
           $id2=$row2['PRODUCT_ID'];
         }?>
-        <a href="productdetail.php?id2=<?php echo $id2?>">
-        <img src="images/vivo.png" height="500px" class="d-block w-100" alt="...">
+        <a href="home/productdetail.php?id2=<?php echo $id2?>">
+        <img src="home/images/vivo.png" height="500px" class="d-block w-100" alt="...">
       </a>
-        <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+        <a href="../login/login.php">
         <div class="bottom-left btn btn-primary" style="font-family: 'Patrick Hand', cursive;">
           Buy Now
         </div>
@@ -175,26 +175,26 @@ background-repeat:inherit;
   <!--icons-->
   <div class="brands">
       <div class="owl-carousel owl-theme" id="carouesel2">
-       <a href="brand.php?name=apple">
-        <div class="item" id="1"><img src="logo/apple.jpg" alt=""></div>
+       <a href="home/brand.php?name=apple">
+        <div class="item" id="1"><img src="home/images/LOGO/apple.jpg" alt=""></div>
         </a>
-        <a href="brand.php?name=redmi">
-        <div class="item" id="3"><img src="logo/mi.jpg" alt=""></div>
+        <a href="home/brand.php?name=redmi">
+        <div class="item" id="3"><img src="home/images/LOGO/mi.jpg" alt=""></div>
         </a>
-        <a href="brand.php?name=realme">
-        <div class="item" id="4"><img src="logo/realme.png" height="90px" alt=""></div>
+        <a href="home/brand.php?name=realme">
+        <div class="item" id="4"><img src="home/images/LOGO/realme.png" height="90px" alt=""></div>
         </a>
-        <a href="brand.php?name=oneplus">
-        <div class="item" id="5"><img src="logo/oneplus.jpg" alt=""></div>
+        <a href="home/brand.php?name=oneplus">
+        <div class="item" id="5"><img src="home/images/LOGO/oneplus.jpg" alt=""></div>
         </a>
-        <a href="brand.php?name=oppo">
-        <div class="item" id="6"><img src="logo/oppo.jpg" alt=""></div>
+        <a href="home/brand.php?name=oppo">
+        <div class="item" id="6"><img src="home/images/LOGO/oppo.jpg" alt=""></div>
         </a>
-        <a href="brand.php?name=samsung">
-        <div class="item" id="7"><img src="logo/samsung.jpg" alt=""></div>
+        <a href="home/brand.php?name=samsung">
+        <div class="item" id="7"><img src="home/images/LOGO/samsung.jpg" alt=""></div>
         </a>
-        <a href="brand.php?name=vivo">
-        <div class="item" id="8"><img src="logo/vivo.jpg" alt=""></div>
+        <a href="home/brand.php?name=vivo">
+        <div class="item" id="8"><img src="home/images/LOGO/vivo.jpg" alt=""></div>
         </a>
       </div>   
   </div>
@@ -209,7 +209,7 @@ background-repeat:inherit;
   while($row3=mysqli_fetch_array($query3)){?>
         <div class="container">
         <div class="card" style="width: 15rem; height:35rem;">
-          <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -217,8 +217,8 @@ background-repeat:inherit;
             <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
             <?php echo $row3['FEATURES'];?></p>
             <div style="position:absolute; bottom:15;">
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+            <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+            <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@ background-repeat:inherit;
   while($row3=mysqli_fetch_array($query3)){?>
         <div class="container">
         <div class="card" style="width: 15rem; height:35rem;">
-          <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -242,8 +242,8 @@ background-repeat:inherit;
             <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
             <?php echo $row3['FEATURES'];?></p>
             <div style="position:absolute; bottom:15;">
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+            <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+            <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
             </div>
           </div>
           
@@ -262,7 +262,7 @@ background-repeat:inherit;
   while($row3=mysqli_fetch_array($query3)){?>
         <div class="container">
         <div class="card" style="width: 15rem; height:35rem;">
-          <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -270,8 +270,8 @@ background-repeat:inherit;
             <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
             <?php echo $row3['FEATURES'];?></p>
             <div style="position:absolute; bottom:15;">
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+            <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+            <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ background-repeat:inherit;
   while($row3=mysqli_fetch_array($query3)){?>
         <div class="container">
         <div class="card" style="width: 15rem; height:35rem;">
-          <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -295,8 +295,8 @@ background-repeat:inherit;
             <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
             <?php echo $row3['FEATURES'];?></p>
             <div style="position:absolute; bottom:15;">
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+            <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+            <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
             </div>
           </div>
         </div>
@@ -312,7 +312,7 @@ background-repeat:inherit;
   while($row3=mysqli_fetch_array($query3)){?>
         <div class="container">
         <div class="card" style="width: 15rem; height:35rem;">
-          <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
+          <img src="home/images/productimages/<?php echo $row3['IMAGE'];?>" alt="..." style="height: 7cm;">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row3['BRAND_NAME']." ".$row3['MODEL_NAME'];?>
               <br><h6>Price: <?php echo $row3['PRICE'];?></h6>
@@ -320,8 +320,8 @@ background-repeat:inherit;
             <p class="card-text" style="    font-family: 'Patrick Hand', cursive; font-size:small;">
             <?php echo $row3['FEATURES'];?></p>
             <div style="position:absolute; bottom:15;">
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Buy Now</a>
-            <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php" class="btn btn-primary">Add to cart</a>
+            <a href="../login/login.php" class="btn btn-primary">Buy Now</a>
+            <a href="../login/login.php" class="btn btn-primary">Add to cart</a>
             </div>
           </div>
         </div>
@@ -345,7 +345,7 @@ background-repeat:inherit;
   <tr>
     <td>
       <div class="card" style="width: 18rem;">
-        <img src="devloper/dishant.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
+        <img src="home/devloper/dishant.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
         <div class="card-body">
           <p class="card-text text-left" style="font-family: 'Patrick Hand', cursive;">Name: Dishant Gajera<br>
           Enrollment No: 1963303075025<br>
@@ -356,7 +356,7 @@ background-repeat:inherit;
       </div>
     </td>
     <td><div class="card" style="width: 18rem;">
-      <img src="devloper/paliya.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
+      <img src="home/devloper/paliya.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
       <div class="card-body">
         <p class="card-text text-left" style="font-family: 'Patrick Hand', cursive;">Name: Dhruv Paliya<br>
           Enrollment No: 196330307054<br>
@@ -366,7 +366,7 @@ background-repeat:inherit;
       </div>
     </div></td>
     <td><div class="card" style="width: 18rem;">
-      <img src="devloper/kaxak.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
+      <img src="home/devloper/kaxak.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
       <div class="card-body">
         <p class="card-text text-left" style="font-family: 'Patrick Hand', cursive;">Name: Kaxak Dobariya<br>
           Enrollment No: 196330307512<br>
@@ -376,7 +376,7 @@ background-repeat:inherit;
       </div>
     </div></td>
     <td><div class="card" style="width: 18rem;">
-      <img src="devloper/yuvraj.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
+      <img src="home/devloper/yuvraj.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
       <div class="card-body">
         <p class="card-text text-left" style="font-family: 'Patrick Hand', cursive;">Name: Yuvrajsinh Rana<br>
           Enrollment No: 196330307548<br>
@@ -386,7 +386,7 @@ background-repeat:inherit;
       </div>
     </div></td>
     <td><div class="card" style="width: 18rem;">
-      <img src="devloper/manav2.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
+      <img src="home/devloper/manav2.jpg" class="card-img-top" alt="..." style="width: 7.6cm; height: 7cm;">
       <div class="card-body">
         <p class="card-text text-left" style="font-family: 'Patrick Hand', cursive;">Name: Manav Shah<br>
         Enrollment No: 196330307556<br>
@@ -399,6 +399,6 @@ background-repeat:inherit;
 </table>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="index.js"></script>
+<script src="home/index.js"></script>
 </body>
 </html>

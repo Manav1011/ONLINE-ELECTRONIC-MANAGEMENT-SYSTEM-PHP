@@ -24,7 +24,7 @@ $insert="INSERT INTO `customer_master`(`CUSTOMER_ID`, `ADMIN_ID`, `SHOPKEEPER_ID
 if($query=mysqli_query($con,$insert)){
   echo '<div class="alert alert-success" role="alert">
   Account successfully created<br>
-  Please Log In <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">Click Here</a>.
+  Please Log In <a href="../login/login.php">Click Here</a>.
 </div>';
 }
 else{

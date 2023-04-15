@@ -311,7 +311,7 @@ html, body {
               </a>
             </li>
             <li class="nav-item me-3" id="signin">
-              <a class="nav-link active" href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+              <a class="nav-link active" href="../login/login.php">
                 <i class="fas fa-sign-in-alt"></i>
                 <font color="black">Sign In</font>
               </a>
@@ -326,7 +326,7 @@ html, body {
           </div>
             <li>
               <div class="nav-item cart position-fixed" id="cart">
-                <a href="/ONLINE ELECTRONIC MANAGEMENT SYSTEM\login\login.php">
+                <a href="../login/login.php">
                 
                   <i class="fas fa-shopping-cart text-white fa-2x">  <font color="white">Cart</font></i>
 
@@ -348,7 +348,7 @@ html, body {
             <div class="col-3">
             <div class="container">
             <div class="card" style="width: 15rem;">
-              <img src="\ONLINE ELECTRONIC MANAGEMENT SYSTEM\shopkeeper\productimages\<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
+              <img src="images/productimages/<?php echo $row['IMAGE'];?>" alt="..." style="height: 7cm;">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $row['BRAND_NAME']." ".$row['MODEL_NAME'];?>
                   <br><h6>Price: <?php echo $row['PRICE'];?></h6>
